@@ -15,11 +15,16 @@ export class TareasComponent implements OnInit {
   ngOnInit(): void {
   }
 agregarTarea(){
-  console.log(this.nombreTarea);
+
   // Objeto Tarea
+  const tarea:tarea ={
+    nombre:this.nombreTarea,
+    estado:false
+  }
 
   // Agregar El objeto tarea al array
-
+this.listTareas.push(tarea);
   // Reset Form
+  this.nombreTarea = '';
 }
 }
