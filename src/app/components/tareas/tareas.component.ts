@@ -27,4 +27,7 @@ this.listTareas.push(tarea);
   // Reset Form
   this.nombreTarea = '';
 }
+eliminarTarea(index:number):void{
+this.listTareas.splice(index,1);
+}
 }
