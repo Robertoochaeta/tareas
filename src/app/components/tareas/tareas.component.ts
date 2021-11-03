@@ -30,4 +30,7 @@ this.listTareas.push(tarea);
 eliminarTarea(index:number):void{
 this.listTareas.splice(index,1);
 }
+actualizarTarea(tarea:tarea,index:number){
+this.listTareas[index].estado=!tarea.estado
+}
 }
